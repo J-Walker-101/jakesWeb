@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jake Walker's Page</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .circle-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            background-color: #f0f0f0;
+            border-radius: 50%;
+            color: #333;
+            font-weight: 700;
+            text-align: center;
+            vertical-align: middle;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .circle-text:hover {
+            background-color: #4285F4;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 32px 0;
+        }
+
+        .search-input {
+            border: 2px solid #ccc;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 20px;
+            background-color: #fff;
+            color: #666;
+        }
+
+        .curved-text {
+            font-size: 84px;
+            font-weight: bold;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .letter {
+            transform: rotateY(-40deg) rotateZ(-20deg); /* Adjust rotation angles for curvature effect */
+            display: inline-block;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        .l1 { color: #4285F4; }
+        .l2 { color: #EA4335; }
+        .l3 { color: #FBBC05; }
+        .l4 { color: #4285F4; }
+        .l5 { color: #34A853; }
+        .l6 { color: #EA4335; }
+        .l7 { color: #FBBC05; }
+        .l8 { color: #34A853; }
+        .l9 { color: #EA4335; }
+        .l10 { color: #FBBC05; }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #aaa;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <div class="header">
+            <p>Contact Information:</p>
+            <p class="tooltip" data-tooltip="816-447-4367">Phone #</p>
+            <p class="tooltip" data-tooltip="jrw7n4@umsystem.edu">Email</p>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="curved-text">
+            <span class="letter l1">J</span>
+            <span class="letter l2">a</span>
+            <span class="letter l3">k</span>
+            <span class="letter l4">e</span>
+            <span class="letter l5">&nbsp;</span>
+            <span class="letter l6">W</span>
+            <span class="letter l7">a</span>
+            <span class="letter l8">l</span>
+            <span class="letter l9">k</span>
+            <span class="letter l10">e</span>
+            <span class="letter l1">r</span>
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="What does a page about Jake Walker look like?" readonly>
+        </div>
+        <div class="icon-container">
+            <a href="professionalBio.html" class="icon-link">
+                <div class="circle-text">Professional Bio</div>
+            </a>
+            <a href="resume.html" class="icon-link">
+                <div class="circle-text">Resume</div>
+            </a>
+            <a href="courses.html" class="icon-link">
+                <div class="circle-text">Education Background</div>
+            </a>
+            <a href="skills.html" class="icon-link">
+                <div class="circle-text">Skills</div>
+            </a>
+            <a href="projects.html" class="icon-link">
+                <div class="circle-text">Projects</div>
+            </a>
+            <a href="workExperience.html" class="icon-link">
+                <div class="circle-text">Work Experience</div>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2002 Jake Walker INC. All rights reserved.
+    </div>
+</body>
+</html>

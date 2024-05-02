@@ -1,0 +1,143 @@
+html, body {
+    font-family: Inter, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.header-container {
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+    padding: 10px;
+    padding-left: auto;
+    box-shadow: 0 2px 2px -2px rgb(218, 216, 216);
+    background: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    top: 0;
+    left: 0;
+}
+
+.header p {
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tooltip {
+    position: relative; 
+    cursor: pointer; 
+}
+
+.tooltip::after {
+    content: attr(data-tooltip); 
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    white-space: nowrap; 
+    background-color: rgb(118, 118, 118); 
+    color: white; 
+    padding: 5px 10px; 
+    border-radius: 4px; 
+    font-size: 12px; 
+    opacity: 0;
+    transition: opacity 0.3s; 
+    pointer-events: none; 
+}
+
+.tooltip:hover {
+    text-decoration: underline; 
+}
+
+.tooltip:hover::after {
+    opacity: 1;
+}
+
+.main-container {
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-box {
+    display: flex;
+    margin-top: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    margin-right: -1px;
+    border: 1px solid #dfe1e5;
+    border-right: none;
+    font-size: 16px;
+    line-height: 20px;
+    height: 44px;
+    width: 484px;
+    outline: none;
+}
+
+.search-button {
+    padding: 10px 15px;
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 -2px 2px -2px gray;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-top: -40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.icon-link {
+    text-decoration: none;
+    color: black; 
+    text-align: center;
+    width: 80px;  
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-size: cover;
+    margin-bottom: 8px;
+}
+
+.icon-link span {
+    display: block;
+}
